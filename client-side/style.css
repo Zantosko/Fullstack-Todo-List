@@ -1,0 +1,82 @@
+ul {
+	list-style: none;
+	margin-top: 1rem;
+}
+
+.note-container {
+	display: inline;
+}
+
+li {
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	display: inline;
+}
+
+.delete-btn {
+	margin-left: 1rem;
+}
+
+#button {
+	background-color: #2e8bc0;
+	color: azure;
+	border: none;
+}
+
+#button:focus {
+	outline: none;
+}
+
+/* Modal Styling */
+.modal-effect {
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-info {
+	background-color: #fff;
+	margin: 10% auto 0 auto;
+	padding: 30px;
+	width: 70%;
+	position: relative;
+	box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+	animation-name: modalopen;
+	animation-direction: 1s;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.closeBtn {
+	color: #aaa;
+	text-align: start;
+	font-size: 30px;
+	margin-bottom: 0.5rem;
+}
+
+.closeBtn:hover,
+.closeBtnBtn:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.closeBtn + div {
+	margin-top: 2rem;
+}
+
+@keyframes modalopen {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
